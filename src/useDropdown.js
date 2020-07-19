@@ -9,13 +9,13 @@ const useDropdown = (label, defaultState, options) => {
       <select
         id={id}
         value={state}
-        disabled={!options.length}
         onChange={(e) => {
           updateState(e.target.value);
         }}
         onBlur={(e) => {
           updateState(e.target.value);
         }}
+        disabled={!options.length}
       >
         <option />
         {options.map((optionString) => (
@@ -26,7 +26,7 @@ const useDropdown = (label, defaultState, options) => {
       </select>
     </label>
   );
-  return [state, Dropdown];
+  return [state, Dropdown, updateState];
 };
 
 export default useDropdown;
