@@ -8,14 +8,14 @@ const App = () => {
   return (
     <div>
       <header>
-        <Link to="/">Adopt Me!</Link>
+        <Link to="/">
+          <h1>Adopt Me!</h1>
+        </Link>
       </header>
-      ;
       <Router>
         <SearchParams path="/" />
         <Details path="/details/:id" />
       </Router>
-      ;
     </div>
   );
 };
