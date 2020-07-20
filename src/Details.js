@@ -2,6 +2,7 @@ import React from "react";
 import pet from "@frontendmasters/pet";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
+import { Link, Redirect } from "@reach/router";
 
 class Details extends React.Component {
   constructor() {
