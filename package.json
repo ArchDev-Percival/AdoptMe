@@ -9,7 +9,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
-    "predeploy": "npx parcel build ./src/index.html",
+    "predeploy": "npx parcel build ./src/index.html --public-url /AdoptMe/",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
@@ -39,6 +39,5 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ],
-  "homepage": "http://dominicpd.github.io/AdoptMe"
+  ]
 }
